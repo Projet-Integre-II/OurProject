@@ -8,7 +8,8 @@ session_start();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EMI Shop</title>
-
+  <!-- the icon of the head -->
+<link rel="icon" type="iamge/png" href="img\logoo.png" />
 
   <!-- bootstrap css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -201,9 +202,9 @@ session_start();
 
 
    <!-- Our three categories -->
-    
+
    <div class="container-marketing">
-    
+
     <!-- Three columns of text below the carousel -->
     <div class="row firstIMG" >
       <div class="col-lg-4 ">
