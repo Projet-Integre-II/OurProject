@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMI Shop</title>
-
+    <!-- the icon of the head -->
+  <link rel="icon" type="iamge/png" href="img\logoo.png" />
     <!-- Our Js -->
     <script src="js/javascript.js"></script>
     <!-- bootstrap css -->
@@ -34,7 +35,7 @@
       <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
       <div class="container">
         <div class="carousel-caption text-left">
-         
+
           <h4> Soyez le Bienvenue dans notre shop </h4>
           <p><a class="btn btn-lg btn-primary" href="Inscription.php" role="button">S'inscrire aujourd'hui</a></p>
         </div>
@@ -97,20 +98,20 @@
   </div><!-- /.row -->
        <div id="acceuilProducts">
         <!-- START THE FEATURETTES -->
-    
+
          <br class="featurette-divider">
-     
-    
+
+
         <section class="featured-places">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-heading">
                             <span>Produits d'Homme</span>
-                            
+
                         </div>
-                    </div> 
-                </div> 
+                    </div>
+                </div>
         <div class="row">
         <?php
             $connexion=mysqli_connect("localhost","root","");
@@ -142,7 +143,7 @@
                         </div>
                     </div>
 
-                
+
 
               <?php
 
@@ -150,15 +151,15 @@
       ?>
       </div>
            </section>
-                
-        
 
- 
+
+
+
         <!-- /END THE FEATURETTES -->
-      
+
       </div><!-- /.container -->
-    
-    
+
+
       <!-- FOOTER -->
       <?php include("footer.php"); ?>
     </main>

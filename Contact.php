@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMI Shop</title>
-
+    <!-- the icon of the head -->
+  <link rel="icon" type="iamge/png" href="img\logoo.png" />
     <!-- Our Js -->
     <script src="js/javascript.js"></script>
     <!-- bootstrap css -->
@@ -18,12 +19,12 @@
         <!-- this is our navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light" >
           <a class="navbar-brand" href="index.html" target="_self"><img src="  img\logo11.png"></a>
-  
-        
+
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-        
+
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
@@ -76,17 +77,17 @@
     <main role="main">
 <!-- Contact Us Section -->
 <form id="contactUs" action="FormTraitment.php" method="POST">
-  
+
   <div class="form-group">
     <label for="exampleFormControlInput1">Email address</label>
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
   </div>
-  
+
     <div class="form-group">
       <label for="exampleFormControlInput1">Your Subject</label>
       <input type="text" class="form-control" name="subject">
     </div>
-  
+
   <div class="form-group">
     <label for="exampleFormControlTextarea1"> Your message</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="txt"></textarea>

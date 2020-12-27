@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMI Shop</title>
-
+    <!-- the icon of the head -->
+  <link rel="icon" type="iamge/png" href="img\logoo.png" />
     <!-- Our Js -->
     <script src="js/javascript.js"></script>
     <!-- bootstrap css -->
@@ -18,12 +19,12 @@
         <!-- this is our navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light" >
           <a class="navbar-brand" href="index.html" target="_self"><img src=" img\logo11.png"></a>
-  
-        
+
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-        
+
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
@@ -61,12 +62,12 @@
                   <a class="dropdown-item" href="Contact.php">Contactez nous</a>
                 </div>
               </li>
-            
+
             <a class="nav-link" href="Connexion.php" >
                 vendre des produits
                 </a>
             </ul>
-            
+
 
             <form class="form-inline mt-2 mt-md-0">
               <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -147,10 +148,10 @@
       </div>
     </div>
   </div>
-        
+
 
   <button type="submit" class="btn btn-primary">Submit</button>
-</form> 
+</form>
 <br>
 <br>
       <!-- FOOTER -->
@@ -159,7 +160,7 @@
         <p>&copy; 2020 EMI shop Team, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
     </main>
-   
+
     <!-- bootstap Js -->
     <script src="js/jquery-3.5.1.slim.min.js" ></script>
 <script src="js/popper.min.js" ></script>

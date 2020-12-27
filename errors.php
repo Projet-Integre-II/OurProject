@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMI Shop</title>
-
+    <!-- the icon of the head -->
+  <link rel="icon" type="iamge/png" href="img\logoo.png" />
     <!-- Our Js -->
     <script src="js/javascript.js"></script>
     <!-- bootstrap css -->
@@ -24,4 +25,3 @@
 </div>
 <?php endif ?>
 </body>
-

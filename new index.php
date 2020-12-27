@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMI Shop</title>
-
+    <!-- the icon of the head -->
+  <link rel="icon" type="iamge/png" href="img\logoo.png" />
     <!-- Our Js -->
     <script src="js/javascript.js"></script>
     <!-- bootstrap css -->
@@ -35,7 +36,7 @@
             <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
             <div class="container">
               <div class="carousel-caption text-left">
-               
+
                 <h4> Soyez le Bienvenue dans notre shop </h4>
                 <p><a class="btn btn-lg btn-primary" href="Inscription.php" role="button">S'inscrire aujourd'hui</a></p>
               </div>
@@ -69,12 +70,12 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    
-    
+
+
   <!-- Our three categories -->
-    
+
       <div class="container-marketing">
-    
+
         <!-- Three columns of text below the carousel -->
         <div class="row firstIMG" >
           <div class="col-lg-4 ">
@@ -96,9 +97,9 @@
             <p><a class="btn btn-secondary" href="WomensCatalogues.php" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
-    
+
         <!-- la visualisation de certaines produit dans l'accueil  -->
-       
+
 
 
 
@@ -113,8 +114,8 @@
                             <span>Produits en vedette</span>
                             <h2>les produits les plus recommandés.</h2>
                         </div>
-                    </div> 
-                </div> 
+                    </div>
+                </div>
         <div class="row">
         <?php
             $connexion=mysqli_connect("localhost","root","");
@@ -146,7 +147,7 @@
                         </div>
                     </div>
 
-                
+
 
               <?php
 
@@ -154,14 +155,14 @@
       ?>
       </div>
            </section>
-                
-        
+
+
 
         <!-- /END THE FEATURETTES -->
-      
+
       </div><!-- /.container -->
-    
-    
+
+
         <section id="video-container">
             <div class="video-overlay"></div>
             <div class="video-content">
@@ -187,7 +188,7 @@
 
       <!-- FOOTER -->
       <?php include("footer.php"); ?>
-      
+
     </main>
 
 

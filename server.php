@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMI Shop</title>
-
+    <!-- the icon of the head -->
+  <link rel="icon" type="iamge/png" href="img\logoo.png" />
     <!-- Our Js -->
     <script src="js/javascript.js"></script>
     <!-- bootstrap css -->
@@ -64,24 +65,24 @@ if(empty($tele)){
 
 }
 if(count($errors) == 0){
-    
+
     $sql="INSERT INTO connexion ( nom, prenom, email, passeword, adress, telephone, ville, pays)
      VALUES ('$nom','$prenom','$email','$passeword','$adress','$tele','$ville', '$pays') ";
      mysqli_query($db,$sql);
      $_SESSION['nom']=$nom;
     // $_SESSION['success']="inscription avec success";
-   
+
     //
-    
+
    // <div class="alert alert-warning" style="width: 700px; marging-left:300px ;">
     //<strong> welcom </strong>-->
 
     //</div>
     //<?php
     array_push($errors,"inscription avec succes");
-   
-    
-    
+
+
+
 }
 
 }
@@ -89,22 +90,22 @@ if(count($errors) == 0){
 if (!$db) {
 
     die("Échec de la connexion : " . mysqli_connect_error());
-} 
+}
 if(isset($_POST['con'])){
-    
+
    $email=$_POST['email'];
    $passeword=$_POST['passeword'];
-    
+
     if(empty($email)){
         array_push($errors,"email est requis");
     }
     if(empty($passeword)){
-        array_push($errors,"mot de passe est requis"); 
+        array_push($errors,"mot de passe est requis");
     }
     if($email=="admin@admin.com" && $passeword=="admin"){
         header('location:admin.php');
     }
-        
+
         $query="SELECT * FROM connexion WHERE email='$email' AND passeword='$passeword' ";
         $result=mysqli_query($db,$query);
         if(mysqli_num_rows($result)==1){
@@ -114,9 +115,9 @@ if(isset($_POST['con'])){
 
         }
         else{
-            array_push($errors,"mot de passe/email est incorrect"); 
+            array_push($errors,"mot de passe/email est incorrect");
         }
-    
+
 }
 
 

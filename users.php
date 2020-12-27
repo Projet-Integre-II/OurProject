@@ -8,6 +8,8 @@ session_start();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EMI Shop</title>
+  <!-- the icon of the head -->
+<link rel="icon" type="iamge/png" href="img\logoo.png" />
 <style type="text/css">
 table{
   border-collapse: collapse;
@@ -117,7 +119,7 @@ tr:nth-child(even){
     if($result->num_rows>0) {
       while($row=$result->fetch_assoc()) {
       echo "<tr><td>".$row["id"]."</td><td>".$row["email"]."</td><td>".$row["passeword"]."</td></tr>";
-     
+
     }
     echo "</table>";
   }
