@@ -13,7 +13,7 @@ installable sur les smartphones (Android/Os) pour
 # les technologies qu'on va utiliser sont :
 
 ## site web :
-front-end: Html5 + Css3 + Boostrap
+front-end: Html5 + Css3 + Boostrap + JavaScript
 
 back-end : PHP + MY SQL
 ## Application mobile :
