@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMI Shop</title>
-    <!-- the icon of the head -->
-  <link rel="icon" type="iamge/png" href="img\logoo.png" />
-    <!-- Our Js -->
-    <script src="js/javascript.js"></script>
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
-<script src="js/bootstap.bundle.min.js"></script>
-    <!-- Our Css -->
-    <link rel="stylesheet" href="css/style.css.css">
-</head>
-<body>
+
     <!-- we will use directly bootstrap for this front end part -->
         <!-- this is our navbar -->
         <?php include("menu.php"); ?>
@@ -137,7 +121,7 @@
                                 <p><?php echo $row['desc']; ?></p>
 
                                 <div class="text-button">
-                                    <a href="product-details.html">View More</a>
+                                    <a href="product-details.php">View More</a>
                                 </div>
                             </div>
                         </div>

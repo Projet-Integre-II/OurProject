@@ -53,7 +53,7 @@ $req->bindValue(':img',file_get_contents($image));
         <!-- this is our navbar -->
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-<a class="navbar-brand" href="index.html" target="_self"><img src="img\logo11.png"></a>
+<a class="navbar-brand" href="index.php" target="_self"><img src="img\logo11.png"></a>
 
 
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
