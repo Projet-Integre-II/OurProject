@@ -12,7 +12,7 @@
 <script src="js/bootstap.bundle.min.js"></script>
     <!-- Our Css -->
     <link rel="stylesheet" href="css/style.css.css">
-    <link rel="stylesheet" href="css/style.css">
+   
 </head>
 <body>
     <!-- we will use directly bootstrap for this front end part -->
