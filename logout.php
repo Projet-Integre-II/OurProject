@@ -4,5 +4,5 @@
 	{
 		unset($_SESSION['email']);
 	}
-	header("location:home.php");
+	header("location:index.php");
 ?>

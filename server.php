@@ -111,7 +111,7 @@ if(isset($_POST['con'])){
         if(mysqli_num_rows($result)==1){
             $_SESSION['email']=$email;
             $_SESSION['success']="you are loged now ";
-            header('location:home.php');
+            header('location:index.php');
 
         }
         else{

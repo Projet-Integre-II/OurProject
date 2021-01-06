@@ -13,7 +13,7 @@ if(isset($_POST['email'])&&isset($_POST['passeword'])){
     $resul=mysqli_query($con, $s);
     $num =mysqli_num_rows($result);
     if($mail==1){
-        header('location:index.html');
+        header('location:index.php');
     }else{
     
     }
