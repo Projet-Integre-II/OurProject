@@ -5,24 +5,8 @@ if (isset($_GET['id'])) {
 }
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMI Shop</title>
 
-    <!-- Our Js -->
-    <script src="js/javascript.js"></script>
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
-<script src="js/bootstap.bundle.min.js"></script>
-    <!-- Our Css -->
-    <link rel="stylesheet" href="css/style.css.css">
-    <!--<link rel="stylesheet" href="css/style.css">-->
-</head>
-<body>
-    <!-- we will use directly bootstrap for this front end part -->
+    <!-- Importing The NavBAR with the session Var -->
         <?php include("menu.php"); ?>
     <!-- this is the section for items -->
                     <!-- Carousel part -->
