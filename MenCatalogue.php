@@ -137,7 +137,7 @@
                                 <p><?php echo $row['desc']; ?></p>
 
                                 <div class="text-button">
-                                    <a href="product-details.php">View More</a>
+                                    <a href="product-details.php?id= <?php echo $row['id'];?>">View More</a>
                                 </div>
                             </div>
                         </div>
