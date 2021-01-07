@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Mer 06 Janvier 2021 à 23:49
+-- Généré le: Mer 06 Janvier 2021 à 23:50
 -- Version du serveur: 5.6.24
 -- Version de PHP: 5.3.13
 
@@ -19,6 +19,28 @@ SET time_zone = "+00:00";
 --
 -- Base de données: `dataprojet`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `panier`
+--
+
+CREATE TABLE IF NOT EXISTS `panier` (
+  `id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `panier`
+--
+
+INSERT INTO `panier` (`id`) VALUES
+(1),
+(3),
+(5),
+(7),
+(8);
 
 -- --------------------------------------------------------
 

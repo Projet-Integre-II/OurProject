@@ -12,7 +12,7 @@
 <script src="js/bootstap.bundle.min.js"></script>
     <!-- Our Css -->
     <link rel="stylesheet" href="css/style.css.css">
-   
+
 </head>
 <body>
     <!-- we will use directly bootstrap for this front end part -->
@@ -20,7 +20,7 @@
     <!-- this is the section for items -->
                     <!-- Carousel part -->
     <main role="main">
- 
+
 
 
   <!-- this is the section for items -->
@@ -42,7 +42,7 @@
             <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
             <div class="container">
               <div class="carousel-caption text-left">
-               
+
                 <h4> Soyez le Bienvenue dans notre shop </h4>
                 <p><a class="btn btn-lg btn-primary" href="Inscription.php" role="button">S'inscrire aujourd'hui</a></p>
               </div>
@@ -76,12 +76,12 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    
-    
+
+
   <!-- Our three categories -->
-    
+
       <div class="container-marketing">
-    
+
         <!-- Three columns of text below the carousel -->
         <div class="row firstIMG" >
           <div class="col-lg-4 ">
@@ -103,9 +103,9 @@
             <p><a class="btn btn-secondary" href="WomensCatalogues.php" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
-    
+
         <!-- la visualisation de certaines produit dans l'accueil  -->
-       
+
 
 
 
@@ -121,8 +121,8 @@
                             <h2>les produits les plus recommandés.</h2>
                         </div>
 
-                    </div> 
-                </div> 
+                    </div>
+                </div>
 
         <div class="row">
         <?php
@@ -149,13 +149,13 @@
                                 <p><?php echo $row['desc']; ?></p>
 
                                 <div class="text-button">
-                                    <a class="detail" href="product-details.php?id= <?php echo $row['nomprod'];?>">View More</a>
+                                    <a class="detail" href="product-details.php?id= <?php echo $row['id'];?>">View More</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                
+
 
               <?php
 

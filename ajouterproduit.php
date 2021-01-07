@@ -1,6 +1,10 @@
 
 <?php
-  if (isset($_POST['submit'])){
+//echo "ok" .$_GET['$id']; //.$_GET['$id'].
+if (isset($_GET['id'])) {
+    $id = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['id']);
+}
+if (isset($_POST['submit'])){
     $nomprod=$_POST['innomprod'];
     $quantite=$_POST['inquantite'];
     $prix=$_POST['inprix'];
@@ -9,7 +13,7 @@
     $image=$_FILES["image"]["tmp_name"];
 
 
-  
+
 
   $bdd=new PDO ('mysql:host=localhost;dbname=dataprojet;charset=utf8','root','');
 
@@ -26,7 +30,7 @@ $req->bindValue(':genre',$gender);//categorie
 $req->bindValue(':img',file_get_contents($image));
 
   $req->execute();
-   
+
 }
 ?>
 
@@ -64,7 +68,7 @@ $req->bindValue(':img',file_get_contents($image));
 
       </select><br>
 
-      
+
     </div>
     <br>
     <br>
@@ -87,16 +91,16 @@ $req->bindValue(':img',file_get_contents($image));
       </div>
     </div>
   </div>
-        
+
 
   <button type="submit" class="btn btn-primary" name="submit">Submit</button>
-</form> 
+</form>
 <br>
 <br>
       <!-- FOOTER -->
       <?php include("footer.php"); ?>
     </main>
-   
+
     <!-- bootstap Js -->
     <script src="js/jquery-3.5.1.slim.min.js" ></script>
 <script src="js/popper.min.js" ></script>
