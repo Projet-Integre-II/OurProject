@@ -175,8 +175,8 @@ if (isset($_POST['delete'])) {
     </div>
     <br>
     <br>
-    <button type="submit" class="btn btn-primary" name="submit">enregistrer</button>
-    <button type="submit" class="blue-button" name="acheter" ><a href="payement.php?prix= <?php echo $somme;?>">confirmer l'achat</a> </button>
+    <!--<button type="submit" class="btn btn-primary" name="submit">enregistrer</button>-->
+    <button type="submit" class="blue-button" name="acheter" text-align: center ><a href="payement.php?prix= <?php echo $somme;?>">confirmer l'achat</a> </button>
 
  </form>
 
