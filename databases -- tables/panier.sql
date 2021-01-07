@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Mer 06 Janvier 2021 à 23:49
+-- Généré le: Jeu 07 Janvier 2021 à 13:01
 -- Version du serveur: 5.6.24
 -- Version de PHP: 5.3.13
 
@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `panier` (
   `id` int(11) NOT NULL,
+  `quantite` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -35,12 +36,11 @@ CREATE TABLE IF NOT EXISTS `panier` (
 -- Contenu de la table `panier`
 --
 
-INSERT INTO `panier` (`id`) VALUES
-(1),
-(3),
-(5),
-(7),
-(8);
+INSERT INTO `panier` (`id`, `quantite`) VALUES
+(1, 0),
+(2, 0),
+(4, 0),
+(7, 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
