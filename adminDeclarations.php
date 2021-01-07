@@ -10,15 +10,14 @@
     <h6>
     <?php
        $myfile = fopen("resultatForum.txt", "r") or die("Unable to open file!");
-       // Output one line until end-of-file
+       // Output one line untggga il end-of-file
        while(!feof($myfile)) {
          echo fgets($myfile) . "<br>";
        }
-       fclose($myfile);       
+       fclose($myfile);
 ?>
     </h6>
 
-<?php include("footer.php"); ?>  
+<?php include("footer.php"); ?>
 </body>
 </html>
-
