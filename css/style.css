@@ -1095,7 +1095,7 @@ textarea.form-control {
   width: 60%;
   margin: 0 auto;
   background-color: #fff;
-  //background-color: #fff;
+  background-color: #fff;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .modal-animated-in {
@@ -1330,4 +1330,44 @@ main > section {
 
 main > section:nth-child(even) {
   background: #f8f8f8;
+}
+.error{
+  width:92%;
+  margin: 0px auto;
+  padding:10px;
+  border: 1px solid #a94442;
+  color: #429da9;
+  background:#f2dede;
+  border-radius: 5px;
+  text-align: left;
+}
+.errorf{
+  width:92%;
+  margin: 0px auto;
+  padding:10px;
+  border: 1px solid #42a953e1;
+  color: #429da9;
+  background:#f2dede;
+  border-radius: 5px;
+  text-align: left;
+}
+.success{
+  width:92%;
+  margin: 0px auto;
+  padding:10px;
+  border: 1px solid #48ca82;
+  color:#f2dede;
+  background:#48ca82;
+  border-radius: 5px;
+  text-align: left;
+}
+.success1{
+  width:92%;
+  margin: 0px auto;
+  padding:10px;
+  border: 1px solid #48ca82;
+  color:#f2dede;
+  background:#48ca82;
+  border-radius: 5px;
+  text-align: left;
 }
