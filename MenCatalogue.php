@@ -8,7 +8,7 @@
   <link rel="icon" type="iamge/png" href="img\logoo.png" />
     <!-- Our Js -->
     <script src="js/javascript.js"></script>
-    <!-- bootstrap css -->
+    <!-- bootstrap css modifi -->
     <link rel="stylesheet" href="css/bootstrap.min.css" >
 <script src="js/bootstap.bundle.min.js"></script>
     <!-- Our Css -->

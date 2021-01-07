@@ -7,16 +7,18 @@ if (isset($_POST['submit'])){
 
 
 
-
+   $quantite=$_POST['qte'];
 
   $bdd=new PDO ('mysql:host=localhost;dbname=dataprojet;charset=utf8','root','');
 
-  $req=$bdd->prepare('insert into panier values(:ident)');
+  $req=$bdd->prepare('insert into panier values(:ident,:quantite)');
   /*$req->execute(array($_FILES["image"]["name"],file_get_contents($_FILES["image"]["tmp_name"])));
 
   $req->execute(array($_POST['qte'],$_POST['description']));
 */
   $req->bindValue(':ident',$id);
+  $req->bindValue(':quantite',$quantite);
+   //$req->bindValue(':pr',$p);
 
 
   $req->execute();
@@ -105,7 +107,7 @@ if (isset($_POST['submit'])){
                             <label class="control-label">Quantity</label>
 
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="1">
+                                <input type="text" class="form-control" placeholder="1" name='qte'>
                             </div>
                         </div>
                       </div>

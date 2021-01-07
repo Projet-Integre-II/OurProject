@@ -3,25 +3,54 @@
 if (isset($_GET['id'])) {
     $id = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['id']);
 }
+
+
+if (isset($_GET['delpro'])) {
+    $del = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['delpro']);
+    //$delProduct = $ct->delProductByCart($delProId);
+  /*  $bdd=new PDO ('mysql:host=localhost;dbname=dataprojet;charset=utf8','root','');
+
+  $req=$bdd->prepare('delete from panier where id='$del'');
+
+
+
+  $req->execute();*/
+}
+
 if (isset($_POST['submit'])){
+    $bdd=new PDO ('mysql:host=localhost;dbname=dataprojet;charset=utf8','root','');
 
-
-
-
-
-  $bdd=new PDO ('mysql:host=localhost;dbname=dataprojet;charset=utf8','root','');
-
-  $req=$bdd->prepare('insert into panier values(:ident)');
+  $req=$bdd->prepare('insert into panier values(:ident,:quantite)');
   /*$req->execute(array($_FILES["image"]["name"],file_get_contents($_FILES["image"]["tmp_name"])));
 
   $req->execute(array($_POST['qte'],$_POST['description']));
 */
   $req->bindValue(':ident',$id);
-
+  $req->bindValue(':quantite',$quantite);
+   //$req->bindValue(':pr',$p);
 
   $req->execute();
 
 }
+
+
+if (isset($_POST['delete'])) {
+   $id = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['id']);
+       $bdd=new PDO ('mysql:host=localhost;dbname=dataprojet;charset=utf8','root','');
+       $d=$id;
+
+  $req=$bdd->prepare('delete from panier');
+  /*$req->execute(array($_FILES["image"]["name"],file_get_contents($_FILES["image"]["tmp_name"])));
+
+  $req->execute(array($_POST['qte'],$_POST['description']));
+*/
+
+
+
+  $req->execute();
+}
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -72,11 +101,13 @@ if (isset($_POST['submit'])){
               <th> prix</th>
               <th> quantité disponible</th>
               <th> description</th>
+              <th> action </th>
 
 
             </tr>
           </thead>
           <?php
+            $somme=0;
             $connexion=mysqli_connect("localhost","root","");
             $db=mysqli_select_db($connexion,'dataprojet');
 
@@ -93,21 +124,24 @@ if (isset($_POST['submit'])){
             $query_run=mysqli_query($connexion,$query);
             while($row=mysqli_fetch_array($query_run))
             {
+              $somme=$somme+ $row['prix']
               ?>
 
               <tr>
                 <td> <?php echo '<img src="data:image;base64,'.base64_encode($row['image']).'" alt="Image" style="width: 200px;">'; ?>
                 </td>
 
+
                 <td> <?php echo $row['nomprod']; ?></td>
                 <td> <?php echo $row['prix']; ?></td>
                 <td> <?php echo $row['quantiteprod']; ?></td>
                 <td> <?php echo $row['desc']; ?></td>
+                <td><button type="submit" class="btn btn-primary" name="delete">supprimer au panier</button></td>
               </tr>
               <br>
 
               <?php
-
+/*<a onclick="return confirm('Are you sure to delete?');" href="?delpro=<?php echo $row['id'];?>">delete</a>*/
             }
 
 
@@ -115,6 +149,12 @@ if (isset($_POST['submit'])){
           }
            ?>
 
+           <tr>
+                <th width="60%">Montant Total : </th>
+
+                <td><?php echo $somme;echo".00"; ?></td>
+
+              </tr>
 
         </table>
         <br>
@@ -131,11 +171,12 @@ if (isset($_POST['submit'])){
 
 
     <div class="blue-button">
-                            <a href="new index.php">retourner au catalogue</a>
+                            <a href="index.php">retourner au catalogue</a>
     </div>
     <br>
     <br>
     <button type="submit" class="btn btn-primary" name="submit">enregistrer</button>
+    <button type="submit" class="blue-button" name="acheter" ><a href="payement.php?prix= <?php echo $somme;?>">confirmer l'achat</a> </button>
 
  </form>
 
