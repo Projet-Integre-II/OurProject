@@ -38,7 +38,7 @@ if (isset($_GET['prix'])) {
     <div class="section group">
 
     <div class="payment">
-      <div >le montant total à payer = <?php echo $total ?> dh</div>
+      <div ><h5>le montant total à payer = <?php echo $total ?> dh</h5></div>
       <h2>Option Payement</h2>
       <a href="payementeffectue.php">payement à livraison</a>
     </div>
