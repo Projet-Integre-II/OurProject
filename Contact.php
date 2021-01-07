@@ -220,15 +220,14 @@
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
       <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2020 EMI shop Team, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+      <?php include("footer.php"); ?>
     </main>
     <!-- bootstap Js -->
     <script src="js/jquery-3.5.1.slim.min.js" ></script>
 <script src="js/popper.min.js" ></script>
 <script src="js/bootstrap.min.js"></script>
+
+
 <!-- Dark Mode Option -->
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script> -->
