@@ -67,7 +67,7 @@
             <a class="dropdown-item" href="Contact.php">Contactez nous</a>
           </div>
         </li>
-        
+        <li><a href="#"><img class="img-circle profile_img" src="img\pic.png" href="#" height=50 width=50 style="margin-right:20px;"></a></li>
       </ul>
      
       <form class="form-inline mt-2 mt-md-0">
