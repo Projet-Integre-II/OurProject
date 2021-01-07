@@ -97,6 +97,8 @@
     </div><!-- /.col-lg-4 -->
   </div><!-- /.row -->
        <div id="acceuilProducts">
+
+       <!-- la visualisation du catalogue des hommes  -->
         <!-- START THE FEATURETTES -->
 
          <br class="featurette-divider">
