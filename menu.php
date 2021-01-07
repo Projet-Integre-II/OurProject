@@ -66,9 +66,9 @@ session_start();
               A propos
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="AboutUs.html">A propos de nous</a>
+              <a class="dropdown-item" href="AboutUs.php">A propos de nous</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="CGU.html">Conditions Generaux d'Utilisation (CGU)</a>
+              <a class="dropdown-item" href="CGU.php">Conditions Generaux d'Utilisation (CGU)</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="Contact.php">Contactez nous</a>
             </div>
@@ -124,9 +124,9 @@ session_start();
               A propos
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="AboutUs.html">A propos de nous</a>
+              <a class="dropdown-item" href="AboutUs.php">A propos de nous</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="CGU.html">Conditions Generaux d'Utilisation (CGU)</a>
+              <a class="dropdown-item" href="CGU.php">Conditions Generaux d'Utilisation (CGU)</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="Contact.php">Contactez nous</a>
             </div>
@@ -188,9 +188,9 @@ session_start();
                 A propos
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="AboutUs.html">A propos de nous</a>
+                <a class="dropdown-item" href="AboutUs.php">A propos de nous</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="CGU.html">Conditions Generaux d'Utilisation (CGU)</a>
+                <a class="dropdown-item" href="CGU.php">Conditions Generaux d'Utilisation (CGU)</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="Contact.php">Contactez nous</a>
               </div>
