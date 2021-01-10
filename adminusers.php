@@ -48,7 +48,12 @@ tr:nth-child(even){
 
     if($result->num_rows>0) {
       while($row=$result->fetch_assoc()) {
-      echo "<tr><td>".$row["id"]."</td><td>".$row["email"]."</td><td>".$row["passeword"]."</td></tr>";
+      echo "<tr>
+      <td>".$row["id"]."</td>
+      <td>".$row["email"]."</td>
+      <td>".$row["passeword"]."</td>
+      <td><button type='button' class='btn btn-danger'>delete</button></td>
+      </tr>";
 
     }
     echo "</table>";
