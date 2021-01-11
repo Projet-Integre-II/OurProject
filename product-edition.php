@@ -3,21 +3,20 @@
 if (isset($_GET['id'])) {
     $id = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['id']);
 }
-if (isset($_POST['submit'])){
+if (isset($_POST['delete']) and isset($_GET['id'])){
+
+  $id = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['id']);
 
 
-
-   $quantite=$_POST['qte'];
 
   $bdd=new PDO ('mysql:host=localhost;dbname=dataprojet;charset=utf8','root','');
 
-  $req=$bdd->prepare('insert into panier values(:ident,:quantite)');
+  $req=$bdd->prepare("delete from produit where id='$id'");
   /*$req->execute(array($_FILES["image"]["name"],file_get_contents($_FILES["image"]["tmp_name"])));
 
   $req->execute(array($_POST['qte'],$_POST['description']));
 */
-  $req->bindValue(':ident',$id);
-  $req->bindValue(':quantite',$quantite);
+
    //$req->bindValue(':pr',$p);
 
 
