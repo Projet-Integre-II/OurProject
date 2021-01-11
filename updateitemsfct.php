@@ -32,4 +32,7 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 
 ?>
+
+
+
 <script type="text/javascript">location.href = 'adminindex.php';</script>

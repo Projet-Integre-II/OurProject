@@ -99,6 +99,41 @@ echo
   <button type='submit' class='btn btn-danger'>Update</button>
 </form>
 
+<!-- FOOTER  -->
+<?php include('footer.php'); ?>
+  </main>
+  <!-- bootstap Js -->
+  <script src='js/jquery-3.5.1.slim.min.js'></script>
+  <script src='js/popper.min.js'></script>
+  <script src='js/bootstrap.min.js'></script>
+
+
+  <!-- Dark Mode Option -->
+
+  <!-- <script src='https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js'></script> -->
+  <script src='js/darkmode-js.min.js'></script>
+  <script>
+    const options = {
+      bottom: '64px', // default: '32px'
+      right: 'unset', // default: '32px'
+      left: '32px', // default: 'unset'
+      time: '0.5s', // default: '0.3s'
+   
+      buttonColorDark: '#100f2c', // default: '#100f2c'
+      buttonColorLight: '#fff', // default: '#fff'
+      saveInCookies: true, // default: true,
+      label: '🌓', // default: ''
+      autoMatchOsTheme: true // default: true
+    }
+    const darkmode = new Darkmode(options);
+    darkmode.showWidget();
+
+    function addDarkmodeWidget() {
+      new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+  </script>
+
 </body>
 </html>";
 

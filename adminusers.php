@@ -76,6 +76,7 @@ tr:nth-child(even){
     $.get("deleteuser.php");
     return false; 
 </script>
+
 <!-- FOOTER  -->
   <?php include("footer.php"); ?>
   </main>
