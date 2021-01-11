@@ -73,7 +73,7 @@ if (isset($_POST['submit'])){
                     <div class="col-md-12">
                         <div class="section-heading">
                             <span>produit: <?php echo $row['nomprod']; ?></span>
-                            <h2><?php echo $id ?></h2>
+                            <h2>id produit: <?php echo $id ?></h2>
                         </div>
                     </div>
                 </div>
@@ -87,12 +87,14 @@ if (isset($_POST['submit'])){
 
                     <div class="col-md-6 col-xs-12">
                     <form action="" method="POST" class="form" enctype="multipart/form-data">
-                      <h2><small><del> <?php echo $row['prix'] +50 ; ?></del></small><strong class="text-primary"><?php echo $row['prix']; ?> </strong>dh</h2>
+                      <p class="lead">prix:
+                      <?php echo $row['prix']; ?>
+                    </p>
+                    <p class="lead">quantite disponible:<?php echo $row['quantiteprod']; ?></p>
 
-                      <br>
 
                       <p class="lead">
-                        <?php echo $row['desc'] ; ?>
+                      description: <?php echo $row['desc'] ; ?>
                       </p>
                       <p class="lead">
                         categorie: <?php echo $row['categorie'] ; ?>
@@ -104,20 +106,13 @@ if (isset($_POST['submit'])){
                         <div class="col-sm-4">
 
 
-                            <label class="control-label">Quantity</label>
 
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="1" name='qte'>
-                            </div>
                         </div>
                       </div>
 
-                        <buton  class="blue-button" >
-                            <a href="panier.php?id= <?php echo $row['id'];?>">afficher panier</a>
-                          </buton>
-                          <button type="submit" class="btn btn-primary" name="submit">ajouter au panier</button>
+                          <button type="submit" class="btn btn-primary" name="delete" >supprimer produit</button>
+                        <button type="submit" class="btn btn-primary" name="submit">modifier produit</button>
                         </div>
-
 
                        <!-- <button type="submit" class="btn btn-primary" name="submit">enregistrer</button> -->
                     </form>
