@@ -15,11 +15,7 @@
     <link rel="stylesheet" href="css/style.css.css">
 </head>
 <body>
-    <!-- we will use directly bootstrap for this front end part -->
-        <!-- this is our navbar -->
-        <?php include("menu.php"); ?>
-    <!-- this is the section for items -->
-                    <!-- Carousel part -->
+
     <main role="main">
 
 <!-- Our carousel -->
@@ -141,7 +137,13 @@
                                 <p><?php echo $row['desc']; ?></p>
 
                                 <div class="text-button">
-                                    <a class="detail" href="product-details.php?id= <?php echo $row['id'];?>">View More</a>
+                                    <a class="detail" href="product-details.php?id= <?php echo $row['id'];?>"><button type="button" class="btn btn-outline-info">View more</button></a>
+                                    <?php 
+                                    echo "<td><a href='deleteitems.php?id=".$row['id']."'><button type='button' class='btn btn-outline-warning'>
+                                    Warning</button></a></td>";
+                                     echo "<td><a href='deleteitems.php?id=".$row['id']."'><button type='button' 
+                                     class='btn btn-outline-danger'>Delete</button></a></td>";
+                                    ?>
                                 </div>
                             </div>
                         </div>
