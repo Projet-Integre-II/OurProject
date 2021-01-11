@@ -1,5 +1,4 @@
 
-
 .catalogue{
   font-size: larger;
   background-color: rgb(151, 243, 212);
@@ -18,7 +17,8 @@ body{
 }
 
 .container-marketing{
-   background-color: rgb(217, 255, 242); <--!radial-gradient(#fff,#ffd6d6);#ff6078;-->
+   background-color: rgb(217, 255, 242); 
+   /* <--!radial-gradient(#fff,#ffd6d6);#ff6078;--> */
 }
 .firstIMG{
     padding-left: 9px;background-color: #ffd6d6;
