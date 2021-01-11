@@ -29,7 +29,7 @@ session_start();
   <!-- this is our navbar -->
   <?php
   if (isset($_SESSION['email'])) {
-  ?><nav class="navbar navbar-expand-lg navbar-light bg-light">
+  ?><nav id="OurNavBar" class="navbar navbar-expand-lg navbar-light bg-light" style="height: 15cms;">
 
       <a class="navbar-brand" href="index.php" target="_self"><img src="img\logo11.png"></a>
 
