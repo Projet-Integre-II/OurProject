@@ -70,7 +70,7 @@ echo
  <label for='exampleFormControlSelect1'>Prix</label></br>
 <div class='input-group mb-3' style='width:15cm;'>
   <div class='input-group-prepend'>
-    <span class='input-group-text'>$</span>
+    <span class='input-group-text'>dh</span>
   </div>
   <input name='prix' value='$prix' type='text' class='form-control' aria-label='Amount (to the nearest dollar)'>
   <div class='input-group-append'>
