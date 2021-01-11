@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="css/style.css.css">
 </head>
 <body>
-
+    <!-- we will use directly bootstrap for this front end part -->
+        <!-- this is our navbar -->
+        <?php include("AdminNavbar.php"); ?>
     <main role="main">
 
 <!-- Our carousel -->
