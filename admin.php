@@ -16,8 +16,8 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="section-heading">
-                  <span>Produits en vedette</span>
-                  <h2>les produits les plus recommandés.</h2>
+                  <span>Produits ajoutés</span>
+                  <h2>les produits disponibles dans les catalogues</h2>
                 </div>
               </div>
             </div>
@@ -35,7 +35,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12">
                   <div class="featured-item">
                     <div class="thumb">
-                      <?php echo '<img src="data:image;base64,' . base64_encode($row['image']) . '" alt="Image" style="width: 100%;">'; ?>
+                      <?php echo '<img src="data:image;base64,' . base64_encode($row['image']) . '" alt="Image" style="width: 100%;height: 150px">'; ?>
                     </div>
                     <div class="down-content">
                       <h4><?php echo $row['nomprod']; ?></h4>
@@ -45,7 +45,7 @@
                       <p><?php echo $row['desc']; ?></p>
 
                       <div class="text-button">
-                        <a href="product-details.php">View More</a>
+                        <a href="product-edition.php?id=<?php echo $row['id'];?>">modifier produit</a>
                       </div>
                     </div>
                   </div>
@@ -67,27 +67,10 @@
       </div><!-- /.container -->
 
 
-      <section id="video-container">
-        <div class="video-overlay"></div>
-        <div class="video-content">
-          <div class="inner">
-            <div class="section-heading">
-              <span>Contact Us</span>
-              <h2>Vivamus nec vehicula felis</h2>
-            </div>
-            <!-- Modal button -->
 
-            <div class="blue-button">
-              <a href="#">Talk to us</a>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2020 EMI shop Team, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+      <?php include("footer.php"); ?>
   </main>
   <!-- bootstap Js -->
   <script src="js/jquery-3.5.1.slim.min.js"></script>

@@ -110,6 +110,7 @@ if(isset($_POST['con'])){
         $result=mysqli_query($db,$query);
         if(mysqli_num_rows($result)==1){
             $_SESSION['email']=$email;
+            $_SESSION['nom']=$nom;
             $_SESSION['success']="you are loged now ";
             header('location:index.php');
 
