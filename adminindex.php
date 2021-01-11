@@ -142,7 +142,7 @@
                                     <a class="detail" href="product-details.php?id= <?php echo $row['id'];?>"><button type="button" class="btn btn-outline-info">View more</button></a>
                                     <?php 
                                     echo "<td><a href='deleteitems.php?id=".$row['id']."'><button type='button' class='btn btn-outline-warning'>
-                                    Warning</button></a></td>";
+                                    Update</button></a></td>";
                                      echo "<td><a href='deleteitems.php?id=".$row['id']."'><button type='button' 
                                      class='btn btn-outline-danger'>Delete</button></a></td>";
                                     ?>
