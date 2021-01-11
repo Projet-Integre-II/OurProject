@@ -6,7 +6,7 @@
 }
 .catalogue .raw{
   background-color: blanchedalmond;
-} 
+}
 .bd-placeholder-img{
     height: 5cm
 }
@@ -18,10 +18,10 @@ body{
 }
 
 .container-marketing{
-   background-color: rgb(217, 255, 242); 
+   background-color: rgb(217, 255, 242); <--!radial-gradient(#fff,#ffd6d6);#ff6078;-->
 }
 .firstIMG{
-    padding-left: 9px;background-color: #ff6078;
+    padding-left: 9px;background-color: #ffd6d6;
 }
 .col-md-7{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -105,10 +105,10 @@ footer{
 
 }
 
-.video-content p { 
-  line-height: 2; 
-  color: #fff; 
-  text-align: center; 
+.video-content p {
+  line-height: 2;
+  color: #fff;
+  text-align: center;
 }
 
 #video-container .video-content .inner {
@@ -184,10 +184,10 @@ section#video-container {
 
 }
 
-.video-content p { 
-  line-height: 2; 
-  color: #fff; 
-  text-align: center; 
+.video-content p {
+  line-height: 2;
+  color: #fff;
+  text-align: center;
 }
 
 #video-container .video-content .inner {
