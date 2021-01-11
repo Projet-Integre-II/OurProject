@@ -16,7 +16,7 @@ if (isset($_POST['submit'])){
 
 
   $bdd=new PDO ('mysql:host=localhost;dbname=dataprojet;charset=utf8','root','');
-
+//(nomprod,quantiteprod,prix,desc,categorie,image)
   $req=$bdd->prepare('insert into produit values(:nom,:q,:pr,:d,:genre,:img)');
   /*$req->execute(array($_FILES["image"]["name"],file_get_contents($_FILES["image"]["tmp_name"])));
 
