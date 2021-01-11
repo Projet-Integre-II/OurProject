@@ -16,7 +16,7 @@ session_start();
 
   <!-- bootstrap css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="js/bootstap.bundle.min.js"></script>
+  <!-- <script src="js/bootstap.bundle.min.js"></script> -->
   <!-- Our Css -->
   <link rel="stylesheet" href="css/style.css.css">
   <link rel="stylesheet" href="css/style.css">
@@ -33,7 +33,7 @@ session_start();
   <!-- this is our navbar -->
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-<a class="navbar-brand" href="index.php" target="_self"><img src="img\logo11.png"></a>
+<a class="navbar-brand" href="adminindex.php" target="_self"><img src="img\logo11.png"></a>
 
 
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@ session_start();
 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
   <ul class="navbar-nav mr-auto">
     <li class="nav-item active">
-      <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="adminindex.php">Home <span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

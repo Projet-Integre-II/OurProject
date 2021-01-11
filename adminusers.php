@@ -47,14 +47,16 @@ tr:nth-child(even){
     $result = $db->query($sql);
 
     if($result->num_rows>0) {
-      while($row=$result->fetch_assoc()) {
-      echo "<tr>
-      <td>".$row["id"]."</td>
-      <td>".$row["email"]."</td>
-      <td>".$row["passeword"]."</td>
-      <td><button type='button' class='btn btn-danger'>delete</button></td>
-      </tr>";
+        while($row=$result->fetch_assoc()) {
+        $a= $row["id"];
+        echo "<tr>";
+        echo "<td> ".$row["id"]."</td>";
+       echo  "<td>".$row["email"]."</td>";
+       echo "<td>".$row["passeword"]."</td>";
+       echo "<td><a href='deleteuser.php?id=".$row['id']."'><button type='button' onclick='deleteUser(\''.$a.'\')' 
+       class='btn btn-outline-danger'>Delete</button></a></td>";
 
+      echo "</tr>";
     }
     echo "</table>";
   }
@@ -62,11 +64,19 @@ tr:nth-child(even){
     echo "0 result";
   }
   $db->close();
-  ?>
+ ?>
 </table>
-
-
-  <!-- FOOTER -->
+<script >
+ //  var div = document.getElementById("idligne");
+ //   var myData = div.textContent;
+   function deleteUser(a) { 
+  
+     <?php echo "hello" ?>;
+     console.log(a);
+    $.get("deleteuser.php");
+    return false; 
+</script>
+<!-- FOOTER  -->
   <?php include("footer.php"); ?>
   </main>
   <!-- bootstap Js -->
