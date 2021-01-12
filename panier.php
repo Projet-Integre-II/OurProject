@@ -114,6 +114,7 @@ if (isset($_POST['delete'])) {
 									<th class="column-3">Price</th>
 									<th class="column-4">Quantity</th>
 									<th class="column-5">Total</th>
+                  <th class="column-5">Action</th>
 								</tr>
 								<?php
 									$somme=0;
@@ -157,6 +158,12 @@ if (isset($_POST['delete'])) {
 											</div>
 										</td>
 										<td class="column-5"><?php echo $row['prix']; ?></td>
+                    <td class="column-6"><?php
+                        echo "<a href='supprimerpanier.php?id=" . $row['id'] . "'>
+                        <button type='button' class='btn btn-outline-danger'>
+                                     Delete</button></a>";
+                        ?>
+                        </td>
 									</tr>
 									<br>
 

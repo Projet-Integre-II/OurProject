@@ -111,7 +111,7 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="featured-item">
                             <div class="thumb">
-                                <?php echo '<img src="data:image;base64,'.base64_encode($row['image']).'" alt="Image" style="width: 100%;">'; ?>
+                                <?php echo '<img src="data:image;base64,'.base64_encode($row['image']).'" alt="Image" style="width: 100%; height: 300px">'; ?>
                             </div>
                             <div class="down-content">
                                 <h4><?php echo $row['nomprod']; ?></h4>
