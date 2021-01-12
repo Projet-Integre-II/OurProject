@@ -31,7 +31,7 @@ session_start();
   if (isset($_SESSION['email'])) {
   ?><nav id="OurNavBar" class="navbar navbar-expand-lg navbar-light bg-light" style="height: 15cms;">
 
-      <a class="navbar-brand" href="index.php" target="_self"><img src="img\logo11.png"></a>
+      <a class="navbar-brand" href="index.php" target="_self"><img src="img\logo2.png"></a>
 
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,6 +73,10 @@ session_start();
               <a class="dropdown-item" href="Contact.php">Contactez nous</a>
             </div>
           </li>
+          <a class="nav-link" href="panier.php" >
+              <img src="img\panier.jpg"width="30" height="30">
+              Panier
+              </a>
            <li><a href="profile.php"><img class="img-circle profile_img" src="img\pic.png" href="#" height=50 width=50 style="margin-right:20px;"></a></li>
         </ul>
 
