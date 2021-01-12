@@ -103,7 +103,7 @@ if(isset($_POST['con'])){
         array_push($errors,"mot de passe est requis");
     }
     if($email=="admin@admin.com" && $passeword=="admin"){
-        header('location:admin.php');
+        header('location:adminindex.php');
     }
 
         $query="SELECT * FROM connexion WHERE email='$email' AND passeword='$passeword' ";

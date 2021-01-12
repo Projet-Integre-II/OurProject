@@ -29,6 +29,7 @@ body{
 }
 #OurNavBar{
     width: 2cm;
+    height: 4cm;
     background-color: antiquewhite;
     font-size: larger;
 }
