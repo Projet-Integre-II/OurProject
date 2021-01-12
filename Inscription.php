@@ -97,10 +97,24 @@
       <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
     <div class="form-group col-md-6">
-      <label for="inputPassword4">Mot de passe</label>
+      <label for="inputPassword4" >Mot de passe</label>
       <input type="password" name="passeword" class="form-control" id="inputPassword4">
+      <label for="msg" id='msg'></label>
     </div>
   </div>
+  <script>
+  const ps=document.querySelector("#inputPassword4")
+  ps.addEventListener('change',()=>{
+    const msg =document.querySelector('#msg')
+    let pass =ps.value;
+    if(pass.length <= 5){
+      msg.innerHTML='Your Password is weak 😞😞'
+    }
+    else{
+      msg.innerHTML='Your Password is strong 😍😍'
+    }
+  })
+  </script>
   <div class="form-group">
     <label for="inputAddress">Addresse</label>
     <input type="text" class="form-control" name="adress" id="inputAddress" placeholder="1234 Main St">
