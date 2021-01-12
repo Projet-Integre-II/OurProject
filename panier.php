@@ -55,9 +55,15 @@ if (isset($_POST['delete'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Shoping Cart</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMI Shop</title>
+    <!--===============================================================================================-->	
+
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--=============================================
 
     <!-- Our Js -->
     <script src="js/javascript.js"></script>
@@ -66,7 +72,7 @@ if (isset($_POST['delete'])) {
 <script src="js/bootstap.bundle.min.js"></script>
     <!-- Our Css -->
     <link rel="stylesheet" href="css/style.css.css">
-    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- we will use directly bootstrap for this front end part -->
@@ -75,116 +81,213 @@ if (isset($_POST['delete'])) {
                     <!-- Carousel part -->
     <main role="main">
 
-<!-- Our carousel -->
+
+	
+
+
+	<!-- breadcrumb -->
+	<div class="container">
+		<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
+			<a href="index.php" class="stext-109 cl8 hov-cl1 trans-04">
+				Home
+				<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+			</a>
+
+			<span class="stext-109 cl4">
+				Shoping Cart
+			</span>
+		</div>
+	</div>
+		
+
+	<!-- Shoping Cart -->
+	<form class="bg0 p-t-75 p-b-85">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 col-xl-7 m-lr-auto m-b-50">
+					<div class="m-l-25 m-r--38 m-lr-0-xl">
+						<div class="wrap-table-shopping-cart">
+							<table class="table-shopping-cart">
+								<tr class="table_head">
+									<th class="column-1">Product</th>
+									<th class="column-2"></th>
+									<th class="column-3">Price</th>
+									<th class="column-4">Quantity</th>
+									<th class="column-5">Total</th>
+								</tr>
+								<?php
+									$somme=0;
+									$connexion=mysqli_connect("localhost","root","");
+									$db=mysqli_select_db($connexion,'dataprojet');
+
+
+									$query1="select * from panier";
+									$query_run1=mysqli_query($connexion,$query1);
+
+									while($row1=mysqli_fetch_array($query_run1))
+									{
+
+
+									$ok=$row1['id'];
+									$query="select * from produit where produit.id='$ok'";
+									$query_run=mysqli_query($connexion,$query);
+									while($row=mysqli_fetch_array($query_run))
+									{
+									$somme=$somme+ $row['prix']
+									?>
+									<tr class="table_row">
+										<td class="column-1">
+											<div class="how-itemcart1">
+											<?php echo '<img src="data:image;base64,'.base64_encode($row['image']).'" alt="IMG" >'; ?>
+											</div>
+										</td>
+										<td class="column-2"><?php echo $row['nomprod']; ?></td>
+										<td class="column-3"><?php echo $row['prix']; ?></td>
+										<td class="column-4">
+											<div class="wrap-num-product flex-w m-l-auto m-r-0">
+												<div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
+													<i class="fs-16 zmdi zmdi-minus"></i>
+												</div>
+
+												<input class="mtext-104 cl3 txt-center num-product" type="number" name="num-product1" value="1">
+
+												<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
+													<i class="fs-16 zmdi zmdi-plus"></i>
+												</div>
+											</div>
+										</td>
+										<td class="column-5"><?php echo $row['prix']; ?></td>
+									</tr>
+									<br>
+
+									<?php
+						/*<a onclick="return confirm('Are you sure to delete?');" href="?delpro=<?php echo $row['id'];?>">delete</a>*/
+								}
 
 
 
-  <!-- Our three categories -->
+          					}
+           						?>
 
+								
+							</table>
+						</div>
 
+						<div class="flex-w flex-sb-m bor15 p-t-18 p-b-15 p-lr-40 p-lr-15-sm">
+							<div class="flex-w flex-m m-r-20 m-tb-5">
+								<input class="stext-104 cl2 plh4 size-117 bor13 p-lr-20 m-r-10 m-tb-5" type="text" name="coupon" placeholder="Coupon Code">
+									
+								<div class="flex-c-m stext-101 cl2 size-118 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-5">
+									Apply coupon
+								</div>
+							</div>
 
+							<div class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
+								Update Cart
+							</div>
+							<div class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
+								<a href="index.php">Retourner au catalogue</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-10 col-lg-7 col-xl-5 m-lr-auto m-b-50">
+					<div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-63 m-r-40 m-lr-0-xl p-lr-15-sm">
+						<h4 class="mtext-109 cl2 p-b-30">
+							Cart Totals
+						</h4>
 
-                <br>
-                <br>
-                <br>
-                <br>
+						<div class="flex-w flex-t bor12 p-b-13">
+							<div class="size-208">
+								<span class="stext-110 cl2">
+									Subtotal:
+								</span>
+							</div>
 
-              <h2>          Votre panier    :</h2>
+							<div class="size-209">
+								<span class="mtext-110 cl2">
+									<?php echo $somme;echo".00"; ?>
+								</span>
+							</div>
+						</div>
+						
+						<div class="flex-w flex-t bor12 p-t-15 p-b-30">
+							<div class="size-208 w-full-ssm">
+								<span class="stext-110 cl2">
+									Shipping:
+								</span>
+							</div>
 
-        <center>
-      <form action="" method="POST" enctype="multipart/form-data">
-        <table width="50%" border="3" cellpadding="10"  cellspacing="12">
-          <thead>
-            <tr>
-              <th> image de produit</th>
-              <th> intitulé produit</th>
-              <th> prix</th>
-              <th> quantité disponible</th>
-              <th> description</th>
-              <th> action </th>
+							<div class="size-209 p-r-18 p-r-0-sm w-full-ssm">
+								<p class="stext-111 cl6 p-t-2">
+									There are no shipping methods available. Please double check your address, or contact us if you need any help.
+								</p>
+								
+								<div class="p-t-15">
+									<span class="stext-112 cl8">
+										Calculate Shipping
+									</span>
 
+									<div class="rs1-select2 rs2-select2 bor8 bg0 m-b-12 m-t-9">
+										<select class="js-select2" name="time">
+											<option>Select a country...</option>
+											<option>Maroc</option>
+											<option>France</option>
+										</select>
+										<div class="dropDownSelect2"></div>
+									</div>
 
-            </tr>
-          </thead>
-          <?php
-            $somme=0;
-            $connexion=mysqli_connect("localhost","root","");
-            $db=mysqli_select_db($connexion,'dataprojet');
+									<div class="bor8 bg0 m-b-12">
+										<input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="state" placeholder="State /  country">
+									</div>
 
+									
+									<div class="flex-w">
+										<div class="flex-c-m stext-101 cl2 size-115 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer">
+											Update Totals
+										</div>
+									</div>
+										
+								</div>
+							</div>
+						</div>
 
-            $query1="select * from panier";
-            $query_run1=mysqli_query($connexion,$query1);
+						<div class="flex-w flex-t p-t-27 p-b-33">
+							<div class="size-208">
+								<span class="mtext-101 cl2">
+									Total:
+								</span>
+							</div>
 
-            while($row1=mysqli_fetch_array($query_run1))
-            {
+							<div class="size-209 p-t-1">
+								<span class="mtext-110 cl2">
+									<?php echo $somme;echo".00"; ?>
+								</span>
+							</div>
+						</div>
+						<!--<button type="submit" class="btn btn-primary" name="submit">enregistrer</button>-->
+    					
+							
+						<button type="submit" class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer"
+							text-align: center ><a href="payement.php?prix= <?php echo $somme;?>">Confirmer l'achat</a>
+						</button>
+					</div>
+					
+				</div>
 
+			</div>
 
-              $ok=$row1['id'];
-            $query="select * from produit where produit.id='$ok'";
-            $query_run=mysqli_query($connexion,$query);
-            while($row=mysqli_fetch_array($query_run))
-            {
-              $somme=$somme+ $row['prix']
-              ?>
-
-              <tr>
-                <td> <?php echo '<img src="data:image;base64,'.base64_encode($row['image']).'" alt="Image" style="width: 200px;">'; ?>
-                </td>
-
-
-                <td> <?php echo $row['nomprod']; ?></td>
-                <td> <?php echo $row['prix']; ?></td>
-                <td> <?php echo $row['quantiteprod']; ?></td>
-                <td> <?php echo $row['desc']; ?></td>
-                <td><button type="submit" class="btn btn-primary" name="delete">supprimer au panier</button></td>
-              </tr>
-              <br>
-
-              <?php
-/*<a onclick="return confirm('Are you sure to delete?');" href="?delpro=<?php echo $row['id'];?>">delete</a>*/
-            }
-
-
-
-          }
-           ?>
-
-           <tr>
-                <th width="60%">Montant Total : </th>
-
-                <td><?php echo $somme;echo".00"; ?></td>
-
-              </tr>
-
-        </table>
-        <br>
-        <br>
-        <br>
-
-
-    </center>
-
-
-        <!-- /END THE FEATURETTES -->
-
-
-
-
-    <div class="blue-button">
-                            <a href="index.php">retourner au catalogue</a>
-    </div>
-    <br>
-    <br>
-    <!--<button type="submit" class="btn btn-primary" name="submit">enregistrer</button>-->
-    <button type="submit" class="blue-button" name="acheter" text-align: center ><a href="payement.php?prix= <?php echo $somme;?>">confirmer l'achat</a> </button>
-
- </form>
+		</div>
+	</form>
+		
 
 
 
       <!-- FOOTER -->
       <?php include("footer.php"); ?>
-
+      
     </main>
 
 

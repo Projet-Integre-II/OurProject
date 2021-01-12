@@ -23,6 +23,7 @@
     <main role="main">
 
 <!-- Our carousel -->
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -32,10 +33,11 @@
 
   <div class="carousel-inner">
     <div class="carousel-item active">
+    
       <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
       <div class="container">
         <div class="carousel-caption text-left">
-
+         
           <h4> Soyez le Bienvenue dans notre shop </h4>
           <p><a class="btn btn-lg btn-primary" href="Inscription.php" role="button">S'inscrire aujourd'hui</a></p>
         </div>
@@ -60,6 +62,7 @@
       </div>
     </div>
   </div>
+  
   <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
