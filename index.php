@@ -139,7 +139,7 @@
                                 <span> <strong><sup>$</sup><?php echo $row['prix']; ?></strong></span>
 
                                 <p><?php 
-                               echo substr($row['desc'], 0, 40)."  ,,,"; 
+                               echo substr($row['desc'], 0, 40)."  ..."; 
                                
 
                                 ?></p>
