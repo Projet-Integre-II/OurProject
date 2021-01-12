@@ -47,7 +47,7 @@
         </div>
     </footer>
     <div class="sub-footer">
-        <p><a href="#">Back to top</a></p>
+  <p><a href="#">Back to top</a></p>
         <p>&copy; Copyright © 2020 EMI-SHOP, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         
     </div>

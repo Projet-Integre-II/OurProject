@@ -75,13 +75,19 @@ session_start();
           </li>
            <li><a href="profile.php"><img class="img-circle profile_img" src="img\pic.png" href="#" height=50 width=50 style="margin-right:20px;"></a></li>
         </ul>
-       
+
         <form class="form-inline mt-2 mt-md-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-bottom:20px">Search</button>
         </form>
 
-      </div>
+      </div> 
+
+             <!-- donnation to us -->
+        <br>
+
+        <button type="button" class="btn btn-outline-success"><a href='https://www.paypal.com/paypalme/donattoemishop'>Donate to us </a> </button>
+       <br>
     </nav>
   <?php
   } else {
@@ -142,6 +148,11 @@ session_start();
         </form>
 
       </div>
+                   <!-- donnation to us -->
+                   <br>
+        
+        <button type="button" class="btn btn-outline-success"><a href='https://www.paypal.com/paypalme/donattoemishop'>Donate to us </a> </button>
+       <br>
     </nav>
   <?php
   }
