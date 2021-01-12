@@ -155,7 +155,7 @@ session_start();
                    <!-- donnation to us -->
                    <br>
         
-        <button type="button" class="btn btn-outline-success"><a href='https://www.paypal.com/paypalme/donattoemishop'>Donate to us </a> </button>
+        <button type="button" class="btn btn-outline-info"><a href='https://www.paypal.com/paypalme/donattoemishop'>Donate to us </a> </button>
        <br>
     </nav>
   <?php
