@@ -138,7 +138,11 @@
 
                                 <span> <strong><sup>$</sup><?php echo $row['prix']; ?></strong></span>
 
-                                <p><?php echo $row['desc']; ?></p>
+                                <p><?php 
+                               echo substr($row['desc'], 0, 40)."  ,,,"; 
+                               
+
+                                ?></p>
 
                                 <div class="text-button">
                                     <a class="detail" href="product-details.php?id= <?php echo $row['id'];?>">View More</a>
