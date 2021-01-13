@@ -17,11 +17,14 @@ if (isset($_POST['submit'])){
 
   $bdd=new PDO ('mysql:host=localhost;dbname=dataprojet;charset=utf8','root','');
 //(nomprod,quantiteprod,prix,desc,categorie,image)
-  $req=$bdd->prepare('insert into produit values(:nom,:q,:pr,:d,:genre,:img)');
+//$r=$bdd->prepare('select max(id) from produit');
+//$row=mysqli_fetch_array($r);
+  $req=$bdd->prepare('insert into produit values(:id,:nom,:q,:pr,:d,:genre,:img)');
   /*$req->execute(array($_FILES["image"]["name"],file_get_contents($_FILES["image"]["tmp_name"])));
 
   $req->execute(array($_POST['qte'],$_POST['description']));
 */
+  $req->bindValue(':id',0);
   $req->bindValue(':nom',$nomprod);
 $req->bindValue(':q',$quantite);
 $req->bindValue(':pr',$prix);
