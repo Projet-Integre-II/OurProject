@@ -38,12 +38,14 @@ if (isset($_GET['prix'])) {
     <div class="section group">
 
     <div class="payment">
-      <div ><h5>le montant total à payer = <?php echo $total ?> dh</h5></div>
+      <div ><h5>le montant total à payer = <?php echo $total;
+      ?> dh</h5></div>
       <h2>Option Payement</h2>
       <div class="form-check">
   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+
   <label class="form-check-label" for="exampleRadios1">
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <form action="https://www.paypal.com/cgi-bin/webscr/" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="D64Z5FDKQJFD8">
 <input type="image" src="https://www.paypalobjects.com/fr_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
@@ -51,6 +53,13 @@ if (isset($_GET['prix'])) {
 </form>
   </label>
 </div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+  <br><a href="payementStripe.php?prix= <?php echo $total;?>">Payement par carte banquaire</a>
+  </label>
+
 <div class="form-check">
   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
   <label class="form-check-label" for="exampleRadios2">

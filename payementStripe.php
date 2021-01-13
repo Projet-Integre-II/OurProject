@@ -33,7 +33,7 @@ if (isset($_GET['prix'])) {
     
 
       <div class="container">
-    <h2 class="my-4 text-center">Intro To React Course [$50]</h2>
+      <div ><h5>le montant total à payer = <?php echo $total ?> dh</h5></div>
     <form action="./charge.php" method="post" id="payment-form">
       <div class="form-row">
        <input type="text" name="first_name" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="First Name">
