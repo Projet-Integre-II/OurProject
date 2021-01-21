@@ -127,9 +127,9 @@
             <a class="dropdown-item" href="Contact.php">Contactez nous</a>
           </div>
         </li>
-        <a class="nav-link" href="Vendre.php" >
+        <!-- <a class="nav-link" href="Vendre.php" >
           vendre des produits
-          </a>
+          </a> -->
       </ul>
      
       <form class="form-inline mt-2 mt-md-0">

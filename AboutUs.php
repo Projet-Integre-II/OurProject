@@ -128,9 +128,9 @@
             <a class="dropdown-item" href="Contact.php">Contactez nous</a>
           </div>
         </li>
-        <a class="nav-link" href="Vendre.php" >
+        <!-- <a class="nav-link" href="Vendre.php" >
           vendre des produits
-          </a>
+          </a> -->
       </ul>
      
       <form class="form-inline mt-2 mt-md-0">
@@ -208,7 +208,7 @@
 <div class="row">
 <div class="col-md-3 col-sm-6">
   <div class="card" style="width: 18rem; background-color: rgb(112, 196, 235);">
-    <img src="img/children.png" class="card-img-top avatar" id="ourtoofs" alt="avatar">
+    <img src="img/pic.png" class="card-img-top avatar" id="ourtoofs" alt="avatar">
     <div class="card-body">
       <p class="card-text" style="font-weight: bold;">EL OUAHABI REDA , 2nd Year Student in Software engineering </p>
     </div>
@@ -217,7 +217,7 @@
 
 <div class="col-md-3 col-sm-6">
   <div class="card" style="width: 18rem; background-color: rgb(252, 126, 195);">
-   <img src="img/children.png" class="card-img-top avatar" id="ourtoofs" alt="avatar">
+   <img src="img/pic.png" class="card-img-top avatar" id="ourtoofs" alt="avatar">
     <div class="card-body">
       <p class="card-text">FATIMA EZZAHRAE CHAHID , 2nd Year Student in Software engineering </p>
     </div>
@@ -226,7 +226,7 @@
 
 <div class="col-md-3 col-sm-6">
   <div class="card" style="width: 18rem; rgb(112, 196, 235);">
-   <img src="img/children.png" class="card-img-top avatar" id="ourtoofs" alt="avatar">
+   <img src="img/pic.png" class="card-img-top avatar" id="ourtoofs" alt="avatar">
     <div class="card-body">
       <p class="card-text">BOUAOUDA ZAKARIA , 2nd Year Student in Software engineering </p>
     </div>
@@ -235,7 +235,7 @@
 
 <div class="col-md-3 col-sm-6">
   <div class="card" style="width: 18rem; background-color: rgb(252, 126, 195);">
-   <img src="img/children.png" class="card-img-top avatar" id="ourtoofs" alt="avatar">
+   <img src="img/pic.png" class="card-img-top avatar" id="ourtoofs" alt="avatar">
     <div class="card-body">
       <p class="card-text">FATIMA EZZAHRAE EL ACHHAB , 2nd Year Student in Software engineering </p>
     </div>

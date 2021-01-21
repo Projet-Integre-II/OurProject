@@ -22,10 +22,10 @@ tr:nth-child(even){
 </style>
 <?php include("adminNavbar.php"); ?>
 
-
+<!-- 
   <h1>
     HI ADMIN
-  </h1>
+  </h1> -->
 
 <table>
   <tr>

@@ -2,9 +2,9 @@
 <?php include("adminNavbar.php"); ?>
 
 
-<h1>
+<!-- <h1>
   HI ADMIN
-</h1>
+</h1> -->
 
       <!-- la visualisation de certaines produit dans l'accueil  -->
       <div id="acceuilProducts">
