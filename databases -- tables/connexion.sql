@@ -44,9 +44,6 @@ CREATE TABLE `connexion` (
 --
 
 INSERT INTO `connexion` (`id`, `nom`, `prenom`, `email`, `passeword`, `adress`, `telephone`, `ville`, `pays`) VALUES
-(31, 'fati', 'achhab', 'achhab@gmail.com', 'ca004defb57f2bc264999b015b89112c', '125 rabat ', 603867362, 'rabat', 'marroc'),
-(32, 'hadil', 'd', 'd@gamil.com', 'c', 'ss', 55, 'f', 'k'),
-(33, 'Ouahabi', 'Reda', 'redaelouahabi98@gmail.com', 'redaelouahabi98@gmail.com', '+212618409886', 212618409886, 'larache', 'morroco'),
 (44, 'aae', 'addsads', 'user@user.com', 'user@user.com', 'user@user.com', 6060606060, 'user@user.com', 'user@user.com');
 
 --
